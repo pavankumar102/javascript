@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.giveinput{
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.giveinput {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.giveinput:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body bgcolor=orange>
+<center>
+<p><h2>Click the button to explore the prompt box.</h2></p>
+
+<button onclick="myFunction()" class="giveinput">Give Input</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Please enter something");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =person;
+  }
+}
+</script>
+
+</body>
+</html>

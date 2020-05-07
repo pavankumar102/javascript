@@ -1,0 +1,28 @@
+<html> 
+  
+<head> 
+    <script> 
+        var Window; 
+        function windowOpen()
+        { 
+        Window = window.open( "https://www.google.com", "_blank", "width=400, height=450"); 
+        var my_time= new Date()
+        Window.document.write(my_time);
+	Window.document.write("<p><center><h2> welcome to javascript</h2></p>");
+        } 
+        function windowClose() 
+        { 
+           Window.close(); 
+        } 
+    </script> 
+</head> 
+  
+<body bgcolor="orange"> 
+  <center>
+   <p><h2>Click the buttons to explore</h2></p>
+    
+    <button onclick="windowOpen()">open new window</button> 
+    <button onclick="windowClose()">Close new window</button> 
+</body> 
+  
+</html> 
